@@ -1,7 +1,6 @@
 // @deno-types="https://deno.land/x/types/react/v16.13.1/react.d.ts"
 
 import Sidebar from './_sidebar.js';
-import Gitalk from './_gitalk.js';
 const Layout = ({ config, title, content, script, sidebar, outputPath }) => {
     const [isDark, setIsDark] = React.useState(
     // @ts-ignore
@@ -44,9 +43,7 @@ if (shouldSetIsDark) {
                                     document.cookie = `is_dark=${!isDark ? '1' : '0'}; expires=Tue, 19 Jun 2038 03:14:07 UTC; path=/`;
                                 } }, isDark ? '关闭黑暗模式' : '开启黑暗模式'))))),
             React.createElement(Sidebar, { sidebar: sidebar, outputPath: outputPath }),
-            React.createElement("section", { className: "main" },
-                content,
-                React.createElement(Gitalk, { clientID: "balabala", clientSecret: "balabala", repo: "deno-tutorial", owner: "hylerrix", admin: ['hylerrix'], id: outputPath, title: title })),
+            React.createElement("section", { className: "main" }, content),
             script)));
 };
 export default Layout;
