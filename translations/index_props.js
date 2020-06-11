@@ -1,4 +1,4 @@
-import Ga from '/deno-tuturial/_ga.js';
+import Ga from '/_ga.js';
 export default {
     'config': {
         "srcDir": ".",
@@ -24,7 +24,7 @@ export default {
             {},
             {}
         ],
-        "base": "/deno-tuturial/",
+        "base": "/",
         "theme": "docs",
         "plugins": [
             null,
@@ -82,7 +82,7 @@ export default {
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/deno-tuturial/main.js", type: "module" })),
+        React.createElement("script", { src: "/main.js", type: "module" })),
     'sidebar': [
         {
             "text": "Deno 钻研之术",
