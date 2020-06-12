@@ -33,6 +33,6 @@ export default {
     }
   ],
   ga: {
-    id: 'UA-45256157-14'
+    id: 'G-MQBSWGKJQ8'
   }
 };

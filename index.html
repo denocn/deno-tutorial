@@ -1,4 +1,4 @@
-<html class="" data-reactroot=""><head><script async="" src="https://www.google-analytics.com/analytics.js"></script><script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-45256157-14');</script><title>Deno 钻研之术</title><meta charSet="utf-8"/><link id="prismTheme" rel="stylesheet" href="/assets/prism.css"/><script>
+<html class="" data-reactroot=""><head><script async="" src="https://www.google-analytics.com/analytics.js"></script><script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-MQBSWGKJQ8');</script><title>Deno 钻研之术</title><meta charSet="utf-8"/><link id="prismTheme" rel="stylesheet" href="/assets/prism.css"/><script>
 let shouldSetIsDark = document.cookie.includes('is_dark=1') ? true : document.cookie.includes('is_dark=0') ? false : window.matchMedia('(prefers-color-scheme: dark)').matches
 if (shouldSetIsDark) {
   document.documentElement.classList.add('is_dark');
@@ -31,11 +31,7 @@ if (shouldSetIsDark) {
 ├── README<span class="token punctuation">.</span>md
 ├── articles # 按照发布顺序进行编号
 │   └── <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
-│   demos # 收录各大优良 Demo，来源不止于官方
-│   ├── deno<span class="token operator">-</span>chat<span class="token operator">-</span>app # 收录了《Deno <span class="token operator">+</span> WebSockets<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>》文章中的相关代码
-│   ├── node<span class="token operator">-</span><span class="token keyword">to</span><span class="token operator">-</span>deno # 收录了《从 Node 到 Deno 解决方案<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>》文章中的相关代码
-│   ├── official<span class="token operator">-</span>examples # 从官网长期更新 Demo 至本仓库
-│   └── the<span class="token operator">-</span>deno<span class="token operator">-</span>handbook # 收录了《Deno 入门手册<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>》文章中的相关代码
+├── demos # 收录各大优良 Demo，来源不止于官方
 └── translations # 收录自己或和小伙伴们一起翻译的优质文章
     ├── authorization<span class="token operator">-</span>required # 暂未得到授权，一般不会跟踪在 Git 上
     └── work<span class="token operator">-</span><span class="token keyword">in</span><span class="token operator">-</span>progress # 翻译进行中
@@ -43,14 +39,14 @@ if (shouldSetIsDark) {
 <p>本仓库工作流大致如下。</p>
 <ul>
 <li><code>master</code> 分支：作为核心提供稳定版本，我直接工作在这里；</li>
-<li><code>Git Flow</code>：开放权限给和我一起翻译、一起写作（大部分在语雀上）的小伙伴；
+<li><code>Github Flow</code>：有兴趣的开发者 fork 后一起来 PR；</li>
+<li><code>Git Flow</code>：开放权限给和我一起翻译、一起写作的小伙伴；
 <ul>
 <li><code>develop</code> 分支：用来对整个子分支进行统一管理；</li>
 <li><code>trans/${name}-${user}</code> 分支：某 user 用来翻译某篇授权 name文章；</li>
 <li><code>write/${name}-${user}</code> 分支：某 user 用来某篇 name 文章的写作。</li>
 </ul>
 </li>
-<li><code>Github Flow</code>：有兴趣的开发者 fork 后一起来 PR。</li>
 </ul>
 <h2 id="%E6%96%87%E7%AB%A0">文章 <a class="header-anchor" href="#%E6%96%87%E7%AB%A0">§</a></h2>
 <p>《Deno 钻研之术》文章内容重点维护在该项目中，以下列表内容根据发布时间排序。写作序号思路为：随心而动！</p>
@@ -144,11 +140,13 @@ if (shouldSetIsDark) {
 <p><strong>202006 写作关键词</strong></p>
 <ul>
 <li>[x] 授权翻译、<a href="https://aralroca.com/blog/from-node-to-deno">From Node to Deno</a></li>
+<li>[ ] JS 模块化</li>
 <li>[ ] Deno、React</li>
 <li>[ ] 参数列表、1.0 特性</li>
-<li>[ ] JS、运行时</li>
-<li>[ ] 深入、HTTP</li>
 <li>[ ] Node 篇：再谈、十大缺陷</li>
+<li>[ ] 授权翻译、<a href="https://www.freecodecamp.org/news/create-a-todo-api-in-deno-written-by-a-guy-coming-from-node/">Deno Oak Todo API</a></li>
+<li>[ ] 授权翻译、<a href="https://www.freecodecamp.org/news/how-to-use-mysql-in-deno-oak/">Deno Oak MySQL</a></li>
+<li>[ ] 授权翻译、<a href="https://www.freecodecamp.org/news/why-deno-is-a-wrong-step-in-the-future/">Why ... Deno ... Wrong ...</a></li>
 <li>[ ] ...</li>
 </ul>
 <p><strong>202005 写作关键词</strong></p>
@@ -167,7 +165,8 @@ if (shouldSetIsDark) {
 <li>[ ] 深入、beats</li>
 <li>[ ] Node 篇：EventEmmiter</li>
 <li>[ ] 精读、采访 Ry</li>
-<li>[ ] 授权翻译、<a href="https://www.freecodecamp.org/news/why-deno-is-a-wrong-step-in-the-future/">Why ... Deno ... Wrong ...</a></li>
+<li>[ ] 深入、HTTP</li>
+<li>[ ] JS、运行时</li>
 </ul>
 <p><strong>其他待做</strong></p>
 <ul>

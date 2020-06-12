@@ -69,7 +69,7 @@ export default {
             }
         ],
         "ga": {
-            "id": "UA-45256157-14"
+            "id": "G-MQBSWGKJQ8"
         }
     },
     'pagePath': "translations/001-the-deno-handbook.md",
@@ -121,5 +121,5 @@ export default {
             "text": "翻译"
         }
     ],
-    'ga': React.createElement(Ga, { id: "UA-45256157-14" })
+    'ga': React.createElement(Ga, { id: "G-MQBSWGKJQ8" })
 };

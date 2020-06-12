@@ -69,7 +69,7 @@ export default {
             }
         ],
         "ga": {
-            "id": "UA-45256157-14"
+            "id": "G-MQBSWGKJQ8"
         }
     },
     'pagePath': "articles/001-install-and-hello-world.md",
@@ -121,5 +121,5 @@ export default {
             "text": "翻译"
         }
     ],
-    'ga': React.createElement(Ga, { id: "UA-45256157-14" })
+    'ga': React.createElement(Ga, { id: "G-MQBSWGKJQ8" })
 };
