@@ -69,7 +69,7 @@ export default {
             }
         ],
         "ga": {
-            "id": "G-MQBSWGKJQ8"
+            "id": "UA-169223577-1"
         }
     },
     'pagePath': "articles/README.md",
@@ -121,5 +121,5 @@ export default {
             "text": "翻译"
         }
     ],
-    'ga': React.createElement(Ga, { id: "G-MQBSWGKJQ8" })
+    'ga': React.createElement(Ga, { id: "UA-169223577-1" })
 };
