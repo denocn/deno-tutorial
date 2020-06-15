@@ -54,7 +54,8 @@ export default {
                 "children": [
                     "translations/001-the-deno-handbook.md",
                     "translations/002-deno-chat-app.md",
-                    "translations/003-from-node-to-deno.md"
+                    "translations/003-from-node-to-deno.md",
+                    "translations/004-deno-oak-todo-api.md"
                 ]
             }
         ],
@@ -65,18 +66,22 @@ export default {
             },
             {
                 "text": "官网",
-                "link": "https://github.com/hylerrix/awesome-deno-cn"
+                "link": "http://deno.js.cn/"
             },
             {
                 "text": "资源",
                 "link": "https://github.com/hylerrix/awesome-deno-cn"
             },
             {
-                "text": "论坛 A",
+                "text": "手册",
+                "link": "https://nugine.github.io/deno-manual-cn"
+            },
+            {
+                "text": "deno.js.cn",
                 "link": "https://deno.js.cn"
             },
             {
-                "text": "论坛 B",
+                "text": "denocn.org",
                 "link": "https://denocn.org"
             },
             {
@@ -132,6 +137,10 @@ export default {
                 {
                     "text": "从 Node 到 Deno：探索各大主流库替代方案",
                     "link": "translations/003-from-node-to-deno.html"
+                },
+                {
+                    "text": "Deno + Oak 构建酷炫的 Todo API",
+                    "link": "translations/004-deno-oak-todo-api.html"
                 }
             ],
             "text": "翻译"
