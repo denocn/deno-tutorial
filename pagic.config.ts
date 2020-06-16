@@ -30,7 +30,7 @@ export default {
     },
     {
       text: '官网',
-      link: 'http://deno.js.cn/'
+      link: 'https://deno.land'
     },
     {
       text: '资源',
@@ -49,11 +49,15 @@ export default {
       link: 'https://denocn.org'
     },
     {
+      text: 'Pagic 主题',
+      link: 'https://github.com/xcatliu/pagic'
+    },
+    {
       text: '关于作者',
       link: 'https://github.com/hylerrix'
     }
   ],
   ga: {
-    id: 'UA-169223577-1'
+    id: Deno.env.get('GA_ID') ?? 'UA-169223577-1'
   }
 };

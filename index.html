@@ -8,7 +8,7 @@ if (shouldSetIsDark) {
   document.documentElement.classList.add('is_dark');
   document.getElementById('prismTheme').href = "/assets/prism_tomorrow.css";
 }
-</script><link rel="stylesheet" href="/assets/index.css"/></head><body><header><h1><a href="/">Deno 钻研之术</a></h1><nav><ul><li><a href="https://github.com/hylerrix/deno-tutorial">源码</a></li><li><a href="http://deno.js.cn/">官网</a></li><li><a href="https://github.com/hylerrix/awesome-deno-cn">资源</a></li><li><a href="https://nugine.github.io/deno-manual-cn">手册</a></li><li><a href="https://deno.js.cn">deno.js.cn</a></li><li><a href="https://denocn.org">denocn.org</a></li><li><a href="https://github.com/hylerrix">关于作者</a></li><li><a href="#">开启黑暗模式</a></li></ul></nav></header><aside><ul><li><a href="/index.html" class="active">Deno 钻研之术</a></li><li><a href="/articles/index.html" class="">文章</a><ul><li><a href="/articles/001-install-and-hello-world.html" class="">(1) Hello，从多样化安装到简单实战</a></li><li><a href="/articles/002-awesome-deno-cn.html" class="">(2) Awesome Deno 中文资源全图谱</a></li></ul></li><li><a href="/translations/index.html" class="">翻译</a><ul><li><a href="/translations/001-the-deno-handbook.html" class="">Deno 入门手册：附大量 TypeScript 代码实例</a></li><li><a href="/translations/002-deno-chat-app.html" class="">Deno + WebSockets 打造聊天室应用</a></li><li><a href="/translations/003-from-node-to-deno.html" class="">从 Node 到 Deno：探索各大主流库替代方案</a></li><li><a href="/translations/004-deno-oak-todo-api.html" class="">Deno + Oak 构建酷炫的 Todo API</a></li></ul></li></ul></aside><section class="main"><article><h1 id="deno-%E9%92%BB%E7%A0%94%E4%B9%8B%E6%9C%AF">Deno 钻研之术 <a class="header-anchor" href="#deno-%E9%92%BB%E7%A0%94%E4%B9%8B%E6%9C%AF">§</a></h1>
+</script><link rel="stylesheet" href="/assets/index.css"/></head><body><header><h1><a href="/">Deno 钻研之术</a></h1><nav><ul><li><a href="https://github.com/hylerrix/deno-tutorial">源码</a></li><li><a href="https://deno.land">官网</a></li><li><a href="https://github.com/hylerrix/awesome-deno-cn">资源</a></li><li><a href="https://nugine.github.io/deno-manual-cn">手册</a></li><li><a href="https://deno.js.cn">deno.js.cn</a></li><li><a href="https://denocn.org">denocn.org</a></li><li><a href="https://github.com/xcatliu/pagic">Pagic 主题</a></li><li><a href="https://github.com/hylerrix">关于作者</a></li><li><a href="#">开启黑暗模式</a></li></ul></nav></header><aside><ul><li><a href="/index.html" class="active">Deno 钻研之术</a></li><li><a href="/articles/index.html" class="">文章</a><ul><li><a href="/articles/001-install-and-hello-world.html" class="">(1) Hello，从多样化安装到简单实战</a></li><li><a href="/articles/002-awesome-deno-cn.html" class="">(2) Awesome Deno 中文资源全图谱</a></li></ul></li><li><a href="/translations/index.html" class="">翻译</a><ul><li><a href="/translations/001-the-deno-handbook.html" class="">Deno 入门手册：附大量 TypeScript 代码实例</a></li><li><a href="/translations/002-deno-chat-app.html" class="">Deno + WebSockets 打造聊天室应用</a></li><li><a href="/translations/003-from-node-to-deno.html" class="">从 Node 到 Deno：探索各大主流库替代方案</a></li><li><a href="/translations/004-deno-oak-todo-api.html" class="">Deno + Oak 构建酷炫的 Todo API</a></li></ul></li></ul></aside><section class="main"><article><h1 id="deno-%E9%92%BB%E7%A0%94%E4%B9%8B%E6%9C%AF">Deno 钻研之术 <a class="header-anchor" href="#deno-%E9%92%BB%E7%A0%94%E4%B9%8B%E6%9C%AF">§</a></h1>
 <blockquote>
 <p>:sauropod: 长期更新的《Deno 钻研之术》！循序渐进学 Deno &amp; 先易后难补 Node &amp; 面向未来的 Deno Web 应用开发。</p>
 </blockquote>
@@ -52,6 +52,7 @@ if (shouldSetIsDark) {
 </ul>
 </li>
 </ul>
+<p>本仓库的<a href="./.ningowood/timeline.html">开发日志</a>。</p>
 <h2 id="%E6%96%87%E7%AB%A0">文章 <a class="header-anchor" href="#%E6%96%87%E7%AB%A0">§</a></h2>
 <p>《Deno 钻研之术》文章内容重点维护在该项目中，以下列表内容根据发布时间排序。写作序号思路为：随心而动！</p>
 <table>
@@ -148,7 +149,7 @@ if (shouldSetIsDark) {
 <li>[ ] Deno、React</li>
 <li>[ ] 参数列表、1.0 特性</li>
 <li>[ ] Node 篇：再谈、十大缺陷</li>
-<li>[ ] 授权翻译、<a href="https://www.freecodecamp.org/news/create-a-todo-api-in-deno-written-by-a-guy-coming-from-node/">Deno Oak Todo API</a></li>
+<li>[x] 授权翻译、<a href="https://www.freecodecamp.org/news/create-a-todo-api-in-deno-written-by-a-guy-coming-from-node/">Deno Oak Todo API</a></li>
 <li>[ ] 授权翻译、<a href="https://www.freecodecamp.org/news/how-to-use-mysql-in-deno-oak/">Deno Oak MySQL</a></li>
 <li>[ ] 授权翻译、<a href="https://www.freecodecamp.org/news/why-deno-is-a-wrong-step-in-the-future/">Why ... Deno ... Wrong ...</a></li>
 <li>[ ] ...</li>
@@ -174,16 +175,19 @@ if (shouldSetIsDark) {
 </ul>
 <p><strong>其他待做</strong></p>
 <ul>
-<li>[ ] 寻找好看的 UI 生成器搭建 Github Pages 部署网站</li>
+<li>[x] 寻找好看的 UI 生成器搭建 Github Pages 部署网站</li>
 </ul>
 <h2 id="%E6%9E%84%E5%BB%BA">构建 <a class="header-anchor" href="#%E6%9E%84%E5%BB%BA">§</a></h2>
 <p>使用 <a href="https://github.com/xcatliu/pagic">Pagic</a> 构建：</p>
 <pre class="language-bash"><code class="language-bash">deno run --unstable --allow-read --allow-write --allow-net <a class="token url-link" href="https://deno.land/x/pagic@0.7.4/mod.ts">https://deno.land/x/pagic@0.7.4/mod.ts</a> build --serve --watch
 </code></pre>
 <h2 id="%E8%B4%A1%E7%8C%AE%E8%80%85">贡献者 <a class="header-anchor" href="#%E8%B4%A1%E7%8C%AE%E8%80%85">§</a></h2>
+<p>按第一次贡献顺序排名</p>
 <ul>
 <li><a href="https://github.com/hylerrix">@hylerrix</a></li>
+<li><a href="https://github.com/imcoddy">@imcoddy</a></li>
 <li><a href="https://github.com/xcatliu">@xcatliu</a></li>
+<li><a href="https://github.com/justjavac">@justjavac</a></li>
 </ul>
 <h2 id="%E8%AE%A2%E9%98%85">订阅 <a class="header-anchor" href="#%E8%AE%A2%E9%98%85">§</a></h2>
 <p>本项目文档内容均采用 [CC-BY-SA-4.0] 协议进行共享，欢迎 Star, Watch 本仓库，或订阅下方微信公众号及时交流。</p>
