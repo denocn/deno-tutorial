@@ -55,7 +55,8 @@ export default {
                     "translations/001-the-deno-handbook.md",
                     "translations/002-deno-chat-app.md",
                     "translations/003-from-node-to-deno.md",
-                    "translations/004-deno-oak-todo-api.md"
+                    "translations/004-deno-oak-todo-api.md",
+                    "translations/005-deno-oak-mysql.md"
                 ]
             }
         ],
@@ -85,8 +86,8 @@ export default {
                 "link": "https://denocn.org"
             },
             {
-                "text": "Pagic 主题",
-                "link": "https://github.com/xcatliu/pagic"
+                "text": "Deno 库排行",
+                "link": "https://yoshixmk.github.io/deno-x-ranking/"
             },
             {
                 "text": "关于作者",
@@ -145,6 +146,10 @@ export default {
                 {
                     "text": "Deno + Oak 构建酷炫的 Todo API",
                     "link": "translations/004-deno-oak-todo-api.html"
+                },
+                {
+                    "text": "Deno + Oak 连接 MySQL 实战教程",
+                    "link": "translations/005-deno-oak-mysql.html"
                 }
             ],
             "text": "翻译"
