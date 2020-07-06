@@ -59,6 +59,6 @@ export default {
     }
   ],
   ga: {
-    id: Deno.env.get('GA_ID') ?? 'UA-169223577-1'
+    id: window.Deno?.env.get('GA_ID') ?? 'UA-169223577-1' 
   }
 };
