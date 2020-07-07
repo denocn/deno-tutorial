@@ -1,7 +1,19 @@
 import Ga from '/_ga.js';
+import Gitalk from '/_gitalk.js';
 import projectConfig from '/pagic.config.js';
 export default {
     'ga': React.createElement(Ga, { id: "UA-169223577-1" }),
+    'gitalk': React.createElement(Gitalk, { admin: [
+            'hylerrix'
+        ], clientID: "60180eea2c09238f8998", clientSecret: "e9ea0ff6555185eda28eff4dfd4b755b1764abf3", id: "translations/deno-chat-app.html", owner: "hylerrix", pagerDirection: "first", repo: "deno-tutorial", title: "Deno + WebSockets \u6253\u9020\u804A\u5929\u5BA4\u5E94\u7528" }),
+    'prev': {
+        "text": "Deno 入门手册：附大量 TypeScript 代码实例",
+        "link": "translations/the-deno-handbook.html"
+    },
+    'next': {
+        "text": "从 Node 到 Deno：探索各大主流库替代方案",
+        "link": "translations/from-node-to-deno.html"
+    },
     'sidebar': [
         {
             "text": "Deno 钻研之术",

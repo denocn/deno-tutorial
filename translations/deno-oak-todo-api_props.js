@@ -1,7 +1,19 @@
 import Ga from '/_ga.js';
+import Gitalk from '/_gitalk.js';
 import projectConfig from '/pagic.config.js';
 export default {
     'ga': React.createElement(Ga, { id: "UA-169223577-1" }),
+    'gitalk': React.createElement(Gitalk, { admin: [
+            'hylerrix'
+        ], clientID: "60180eea2c09238f8998", clientSecret: "e9ea0ff6555185eda28eff4dfd4b755b1764abf3", id: "translations/deno-oak-todo-api.html", owner: "hylerrix", pagerDirection: "first", repo: "deno-tutorial", title: "Deno + Oak \u6784\u5EFA\u9177\u70AB\u7684 Todo API" }),
+    'prev': {
+        "text": "从 Node 到 Deno：探索各大主流库替代方案",
+        "link": "translations/from-node-to-deno.html"
+    },
+    'next': {
+        "text": "Deno + Oak 连接 MySQL 实战教程",
+        "link": "translations/deno-oak-mysql.html"
+    },
     'sidebar': [
         {
             "text": "Deno 钻研之术",

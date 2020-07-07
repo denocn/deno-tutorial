@@ -1,7 +1,17 @@
 import Ga from '/_ga.js';
+import Gitalk from '/_gitalk.js';
 import projectConfig from '/pagic.config.js';
 export default {
     'ga': React.createElement(Ga, { id: "UA-169223577-1" }),
+    'gitalk': React.createElement(Gitalk, { admin: [
+            'hylerrix'
+        ], clientID: "60180eea2c09238f8998", clientSecret: "e9ea0ff6555185eda28eff4dfd4b755b1764abf3", id: "articles/ecology/awesome-deno-cn.html", owner: "hylerrix", pagerDirection: "first", repo: "deno-tutorial", title: "Awesome Deno \u4E2D\u6587\u8D44\u6E90\u5168\u56FE\u8C31" }),
+    'prev': {
+        "text": "生态篇"
+    },
+    'next': {
+        "text": "Node 篇"
+    },
     'sidebar': [
         {
             "text": "Deno 钻研之术",
