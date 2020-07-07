@@ -80,12 +80,12 @@ export default {
         }
     ],
     config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
-    'pagePath': "articles/README.md",
+    'pagePath': "articles/backend/README.md",
     'layoutPath': "_layout.tsx",
-    'outputPath': "articles/index.html",
-    'title': "文章",
+    'outputPath': "articles/backend/index.html",
+    'title': "后端篇",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>文章</h1>\n'
+            __html: '<h1>后端篇</h1>\n'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),

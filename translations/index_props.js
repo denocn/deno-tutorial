@@ -1,159 +1,97 @@
 import Ga from '/_ga.js';
+import projectConfig from '/pagic.config.js';
 export default {
-    'config': {
-        "srcDir": ".",
-        "publicDir": "public",
-        "ignore": [
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {}
-        ],
-        "base": "/",
-        "theme": "docs",
-        "plugins": [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-        ],
-        "watch": false,
-        "serve": false,
-        "port": 8000,
-        "title": "Deno 钻研之术",
-        "sidebar": [
-            "README.md",
-            {
-                "link": "articles/README.md",
-                "children": [
-                    "articles/001-install-and-hello-world.md",
-                    "articles/002-awesome-deno-cn.md"
-                ]
-            },
-            {
-                "link": "translations/README.md",
-                "children": [
-                    "translations/001-the-deno-handbook.md",
-                    "translations/002-deno-chat-app.md",
-                    "translations/003-from-node-to-deno.md",
-                    "translations/004-deno-oak-todo-api.md",
-                    "translations/005-deno-oak-mysql.md"
-                ]
-            }
-        ],
-        "nav": [
-            {
-                "text": "源码",
-                "link": "https://github.com/hylerrix/deno-tutorial"
-            },
-            {
-                "text": "官网",
-                "link": "https://deno.land"
-            },
-            {
-                "text": "资源",
-                "link": "https://github.com/hylerrix/awesome-deno-cn"
-            },
-            {
-                "text": "手册",
-                "link": "https://nugine.github.io/deno-manual-cn"
-            },
-            {
-                "text": "deno.js.cn",
-                "link": "https://deno.js.cn"
-            },
-            {
-                "text": "denocn.org",
-                "link": "https://denocn.org"
-            },
-            {
-                "text": "Deno 库排行",
-                "link": "https://yoshixmk.github.io/deno-x-ranking/"
-            },
-            {
-                "text": "关于作者",
-                "link": "https://github.com/hylerrix"
-            }
-        ],
-        "ga": {
-            "id": "UA-169223577-1"
+    'ga': React.createElement(Ga, { id: "UA-169223577-1" }),
+    'sidebar': [
+        {
+            "text": "Deno 钻研之术",
+            "link": "index.html",
+            "pagePath": "README.md"
+        },
+        {
+            "text": "基础篇",
+            "children": [
+                {
+                    "text": "Hello，从多样化安装到简单实战",
+                    "link": "articles/basic/install-and-hello-world.html",
+                    "pagePath": "articles/basic/install-and-hello-world.md"
+                }
+            ]
+        },
+        {
+            "text": "生态篇",
+            "children": [
+                {
+                    "text": "Awesome Deno 中文资源全图谱",
+                    "link": "articles/ecology/awesome-deno-cn.html",
+                    "pagePath": "articles/ecology/awesome-deno-cn.md"
+                }
+            ]
+        },
+        {
+            "text": "Node 篇",
+            "children": [
+                {
+                    "text": "深入浅出 Create React App",
+                    "link": "articles/node/create-react-app-intro.html",
+                    "pagePath": "articles/node/create-react-app-intro.md"
+                },
+                {
+                    "text": "欲取代绝大多 JavaScript 工具链？Rome 尝鲜",
+                    "link": "articles/node/javascript-toolchain-rome.html",
+                    "pagePath": "articles/node/javascript-toolchain-rome.md"
+                }
+            ]
+        },
+        {
+            "text": "翻译篇",
+            "children": [
+                {
+                    "text": "Deno 入门手册：附大量 TypeScript 代码实例",
+                    "link": "translations/the-deno-handbook.html",
+                    "pagePath": "translations/the-deno-handbook.md"
+                },
+                {
+                    "text": "Deno + WebSockets 打造聊天室应用",
+                    "link": "translations/deno-chat-app.html",
+                    "pagePath": "translations/deno-chat-app.md"
+                },
+                {
+                    "text": "从 Node 到 Deno：探索各大主流库替代方案",
+                    "link": "translations/from-node-to-deno.html",
+                    "pagePath": "translations/from-node-to-deno.md"
+                },
+                {
+                    "text": "Deno + Oak 构建酷炫的 Todo API",
+                    "link": "translations/deno-oak-todo-api.html",
+                    "pagePath": "translations/deno-oak-todo-api.md"
+                },
+                {
+                    "text": "Deno + Oak 连接 MySQL 实战教程",
+                    "link": "translations/deno-oak-mysql.html",
+                    "pagePath": "translations/deno-oak-mysql.md"
+                }
+            ]
+        },
+        {
+            "text": "感谢",
+            "link": "articles/THANKS.html",
+            "pagePath": "articles/THANKS.md"
         }
-    },
+    ],
+    config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
     'pagePath': "translations/README.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "translations/index.html",
-    'title': "翻译",
+    'title': "翻译篇",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1 id="%E7%BF%BB%E8%AF%91">翻译 <a class="header-anchor" href="#%E7%BF%BB%E8%AF%91">§</a></h1>\n'
+            __html: '<h1>翻译篇</h1>\n'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/main.js", type: "module" })),
-    'sidebar': [
-        {
-            "text": "Deno 钻研之术",
-            "link": "index.html"
-        },
-        {
-            "link": "articles/index.html",
-            "children": [
-                {
-                    "text": "(1) Hello，从多样化安装到简单实战",
-                    "link": "articles/001-install-and-hello-world.html"
-                },
-                {
-                    "text": "(2) Awesome Deno 中文资源全图谱",
-                    "link": "articles/002-awesome-deno-cn.html"
-                }
-            ],
-            "text": "文章"
-        },
-        {
-            "link": "translations/index.html",
-            "children": [
-                {
-                    "text": "Deno 入门手册：附大量 TypeScript 代码实例",
-                    "link": "translations/001-the-deno-handbook.html"
-                },
-                {
-                    "text": "Deno + WebSockets 打造聊天室应用",
-                    "link": "translations/002-deno-chat-app.html"
-                },
-                {
-                    "text": "从 Node 到 Deno：探索各大主流库替代方案",
-                    "link": "translations/003-from-node-to-deno.html"
-                },
-                {
-                    "text": "Deno + Oak 构建酷炫的 Todo API",
-                    "link": "translations/004-deno-oak-todo-api.html"
-                },
-                {
-                    "text": "Deno + Oak 连接 MySQL 实战教程",
-                    "link": "translations/005-deno-oak-mysql.html"
-                }
-            ],
-            "text": "翻译"
-        }
-    ],
-    'ga': React.createElement(Ga, { id: "UA-169223577-1" })
+        React.createElement("script", { src: "/index.js", type: "module" })),
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol></ol></nav>'
+        } })
 };
