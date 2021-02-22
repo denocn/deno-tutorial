@@ -13,201 +13,74 @@
       document.getElementById('prismTheme').href = "/assets/prism_tomorrow.css";
     }
   </script>
-</head><body><header><h1><a href="/">Deno 钻研之术</a></h1><nav><ul><li class="nav_custom_item"><a href="http://qiniu.ningo.cloud/reward-alipay.png" target="_blank">打赏一下!!</a></li><li class="nav_custom_item"><a href="https://deno.land">官网</a></li><li class="nav_custom_item"><a href="https://github.com/hylerrix/awesome-deno-cn">资源</a></li><li class="nav_custom_item"><a href="https://nugine.github.io/deno-manual-cn">手册</a></li><li class="nav_custom_item"><a href="https://deno.js.cn">deno.js.cn</a></li><li class="nav_custom_item"><a href="https://denocn.org">denocn.org</a></li><li class="nav_custom_item"><a href="https://yoshixmk.github.io/deno-x-ranking/">Deno 库排行</a></li><li class="nav_custom_item"><a href="https://github.com/hylerrix">关于作者</a></li><li class="mobile_menu flex_center"><a class="czs-menu-l" href="#" style="background-image:url(&quot;/assets/czs-menu-l.svg&quot;)"></a></li><li class="mobile_header"><h1><a href="/">Deno 钻研之术</a></h1></li><li style="flex-grow:1"></li><li class="flex_center"><a class="czs-github-logo" href="https://github.com/hylerrix/deno-tutorial" target="_blank" style="background-image:url(&quot;/assets/czs-github-logo.svg&quot;)"></a></li><li class="toggle_dark flex_center"><span class="czs-sun" style="background-image:url(&quot;/assets/czs-sun.svg&quot;)"></span><span class="czs-sun-l" style="background-image:url(&quot;/assets/czs-sun-l.svg&quot;)"></span><span class="czs-moon" style="background-image:url(&quot;/assets/czs-moon.svg&quot;)"></span><span class="czs-moon-l" style="background-image:url(&quot;/assets/czs-moon-l.svg&quot;)"></span></li></ul></nav></header><aside class="sidebar"><ol><li class="unfold"><a href="/index.html" class="nav_link active">Deno 钻研之术</a></li><li class="unfold"><a href="#" class="nav_link no_link">基础篇<span class="czs-angle-up-l" style="background-image:url(&quot;/assets/czs-angle-up-l.svg&quot;)"></span><span class="czs-angle-down-l" style="background-image:url(&quot;/assets/czs-angle-down-l.svg&quot;)"></span></a><ol style="height:auto"><li><a href="/articles/basic/install-and-hello-world.html" class="nav_link">Hello，从多样化安装到简单实战</a></li></ol></li><li class="unfold"><a href="#" class="nav_link no_link">生态篇<span class="czs-angle-up-l" style="background-image:url(&quot;/assets/czs-angle-up-l.svg&quot;)"></span><span class="czs-angle-down-l" style="background-image:url(&quot;/assets/czs-angle-down-l.svg&quot;)"></span></a><ol style="height:auto"><li><a href="/articles/ecology/awesome-deno-cn.html" class="nav_link">Awesome Deno 中文资源全图谱</a></li></ol></li><li class="unfold"><a href="#" class="nav_link no_link">Node 篇<span class="czs-angle-up-l" style="background-image:url(&quot;/assets/czs-angle-up-l.svg&quot;)"></span><span class="czs-angle-down-l" style="background-image:url(&quot;/assets/czs-angle-down-l.svg&quot;)"></span></a><ol style="height:auto"><li><a href="/articles/node/create-react-app-intro.html" class="nav_link">深入浅出 Create React App</a></li><li><a href="/articles/node/javascript-toolchain-rome.html" class="nav_link">欲取代绝大多 JavaScript 工具链？Rome 尝鲜</a></li></ol></li><li class="unfold"><a href="#" class="nav_link no_link">翻译篇<span class="czs-angle-up-l" style="background-image:url(&quot;/assets/czs-angle-up-l.svg&quot;)"></span><span class="czs-angle-down-l" style="background-image:url(&quot;/assets/czs-angle-down-l.svg&quot;)"></span></a><ol style="height:auto"><li><a href="/translations/the-deno-handbook.html" class="nav_link">Deno 入门手册：附大量 TypeScript 代码实例</a></li><li><a href="/translations/deno-chat-app.html" class="nav_link">Deno + WebSockets 打造聊天室应用</a></li><li><a href="/translations/from-node-to-deno.html" class="nav_link">从 Node 到 Deno：探索各大主流库替代方案</a></li><li><a href="/translations/deno-oak-todo-api.html" class="nav_link">Deno + Oak 构建酷炫的 Todo API</a></li><li><a href="/translations/deno-oak-mysql.html" class="nav_link">Deno + Oak 连接 MySQL 实战教程</a></li></ol></li><li class="unfold"><a href="/articles/THANKS.html" class="nav_link">感谢</a></li></ol><hr/><a class="powered_by" href="https://github.com/xcatliu/pagic" target="_blank">Powered by <img src="/assets/pagic.png"/>agic</a></aside><section class="main"><div class="main_article"><article><h1>Deno 钻研之术</h1>
-<blockquote>
-<p>:sauropod: 长期更新的《Deno 钻研之术》！循序渐进学 Deno &amp; 先易后难补 Node &amp; 面向未来的 Deno Web 应用开发。</p>
-</blockquote>
-<p><img src="http://qiniu.ningo.cloud/deno-background.png" alt=""></p>
-<p>《Deno 钻研之术》的配套仓库：<a href="https://github.com/hylerrix/awesome-deno-cn">独家 Awesome Deno 资源清单</a>，构造 Deno 资源全图谱。</p>
-<h2 id="%E7%9B%AE%E5%BD%95">目录<a class="anchor" href="#%E7%9B%AE%E5%BD%95">§</a></h2>
-<p>目前规划的章节目录如下。</p>
-<ul>
-<li>基础篇：循序渐进学 Deno 基础知识；</li>
-<li>标准库篇：深入标准库的内部世界；</li>
-<li>CLI 篇：探索 CLI 命令行的知识；</li>
-<li>Web 篇：打造 Web 开发基石；</li>
-<li>Node 篇：先易后难补 Node 知识，探索与 Deno 的异与同；</li>
-<li>Rust 篇：探索 Deno 底层有关 Rust 的更多知识；</li>
-<li>前端篇：探索 Deno Web 前端应用开发的方式；</li>
-<li>后端篇：探索 Deno Web 后端应用开发的方式；</li>
-<li>架构篇：深入到 Deno 底层读 V8，学架构；</li>
-<li>生态篇：介绍 Deno 生态的相关内容；</li>
-<li>翻译篇：翻译优质的、授权的英文一手博文。</li>
-</ul>
-<p>目前本仓库的文件结构如下。</p>
-<pre class="language-autoit"><code class="language-autoit"><span class="token punctuation">.</span>
-├── LICENSE
-├── README<span class="token punctuation">.</span>md
-├── articles # 按照发布顺序进行编号
-│   └── <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
-├── demos # 收录各大优良 Demo，来源不止于官方
-└── translations # 收录自己或和小伙伴们一起翻译的优质文章
-</code></pre>
-<p>本仓库工作流大致如下。</p>
-<ul>
-<li><code>master</code> 分支：作为核心提供稳定版本，我直接工作在这里；</li>
-<li><code>Github Flow</code>：有兴趣的开发者 fork 后一起来 PR；</li>
-<li><code>Git Flow</code>：开放权限给和我一起翻译、一起写作的小伙伴；
-<ul>
-<li><code>develop</code> 分支：用来对整个子分支进行统一管理；</li>
-<li><code>trans/${name}-${user}</code> 分支：某 user 用来翻译某篇授权 name文章；</li>
-<li><code>write/${name}-${user}</code> 分支：某 user 用来某篇 name 文章的写作。</li>
-</ul>
-</li>
-</ul>
-<p>本仓库的<a href="./.ningowood/timeline.html">开发日志</a>。</p>
-<h2 id="%E6%96%87%E7%AB%A0">文章<a class="anchor" href="#%E6%96%87%E7%AB%A0">§</a></h2>
-<p>《Deno 钻研之术》文章内容重点维护在该项目中，以下列表内容根据发布时间排序。写作序号思路为：随心而动！</p>
-<table>
-<thead>
-<tr>
-<th>序号</th>
-<th>文章名</th>
-<th>发布时间</th>
-<th>所属章节</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>001</td>
-<td><a href="./articles/001-install-and-hello-world.html">Hello, 从多样化安装到简单实战</a></td>
-<td>2020-05-13</td>
-<td>基础篇</td>
-<td>Deno v1.0 正式发布之日</td>
-</tr>
-<tr>
-<td>002</td>
-<td>:heart: <a href="./articles/002-awesome-deno-cn.html">Awesome Deno 中文资源全图谱</a></td>
-<td>2020-05-22</td>
-<td>生态篇</td>
-<td></td>
-</tr>
-<tr>
-<td>003</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-</tbody>
-</table>
-<p>这里将翻译篇抽离出来单独排序，争取得到更多的授权翻译，还有欢迎你 issues/群里 推荐高质量的文章甚至一起翻译！</p>
-<table>
-<thead>
-<tr>
-<th>序号</th>
-<th>文章名</th>
-<th>原文发布时间</th>
-<th>翻译发布时间</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>001</td>
-<td><a href="./translations/001-the-deno-handbook.html">Deno 入门手册：附大量 TypeScript 代码实例</a></td>
-<td>2020-05-12</td>
-<td>2020-05-18</td>
-<td>其它译者：<a href="http://github.com/yunkou">@YunKou</a></td>
-</tr>
-<tr>
-<td>002</td>
-<td><a href="./translations/002-deno-chat-app.html">Deno + WebSockets 打造聊天室应用</a></td>
-<td>2020-05-10</td>
-<td>2020-05-25</td>
-<td></td>
-</tr>
-<tr>
-<td>003</td>
-<td><a href="./translations/003-from-node-to-deno.html">从 Node 到 Deno：探索各大主流库替代方案</a></td>
-<td>2020-05-17</td>
-<td>2020-06-04</td>
-<td>其它译者：<a href="http://github.com/yunkou">@YunKou</a></td>
-</tr>
-<tr>
-<td>004</td>
-<td><a href="./translations/004-deno-oak-todo-api.html">Deno + Oak 构建酷炫的 Todo API</a></td>
-<td>2020-05-29</td>
-<td>2020-06-15</td>
-<td></td>
-</tr>
-<tr>
-<td>005</td>
-<td><a href="./translations/005-deno-oak-mysql.html">Deno + Oak 连接 MySQL 实战教程</a></td>
-<td>2020-06-07</td>
-<td>2020-07-06</td>
-<td></td>
-</tr>
-<tr>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-</tbody>
-</table>
-<p>同时更新在如下第三方平台：</p>
-<ul>
-<li><a href="https://mp.weixin.qq.com/s/Eg2atcxZPpIfgqdAd73imQ">微信</a>：公众号 @ningowood。</li>
-<li><a href="https://zhuanlan.zhihu.com/ningowood">知乎</a>。</li>
-<li><a href="https://juejin.im/user/57e9fc052e958a0054509825/posts">掘金</a>。</li>
-<li><a href="https://www.yuque.com/ningowood/beginning">语雀</a>。</li>
-</ul>
-<h2 id="%E5%86%99%E4%BD%9C%E8%B7%AF%E7%BA%BF%E5%9B%BE">写作路线图<a class="anchor" href="#%E5%86%99%E4%BD%9C%E8%B7%AF%E7%BA%BF%E5%9B%BE">§</a></h2>
-<p>也欢迎你的建议。你想了解什么？一起来学。</p>
-<p><strong>202007 写作关键词</strong></p>
-<ul>
-<li>[ ] JS 模块化</li>
-<li>[ ] Deno、React</li>
-<li>[ ] 参数列表、1.0 特性</li>
-<li>[ ] Node 篇：再谈、十大缺陷</li>
-<li>[x] 授权翻译、<a href="https://www.freecodecamp.org/news/how-to-use-mysql-in-deno-oak/">Deno Oak MySQL</a></li>
-<li>[ ] 授权翻译、<a href="https://www.freecodecamp.org/news/why-deno-is-a-wrong-step-in-the-future/">Why ... Deno ... Wrong ...</a></li>
-<li>[ ] ...</li>
-</ul>
-<p><strong>202006 写作关键词</strong></p>
-<ul>
-<li>[x] 授权翻译、<a href="https://aralroca.com/blog/from-node-to-deno">From Node to Deno</a></li>
-<li>[x] 授权翻译、<a href="https://www.freecodecamp.org/news/create-a-todo-api-in-deno-written-by-a-guy-coming-from-node/">Deno Oak Todo API</a></li>
-</ul>
-<p><strong>202005 写作关键词</strong></p>
-<ul>
-<li>[x] 简介、安装、Demo</li>
-<li>[x] 授权翻译、<a href="https://www.freecodecamp.org/news/the-deno-handbook/">The Deno Handbook: ...</a></li>
-<li>[x] Awesome Deno！</li>
-<li>[x] 授权翻译、<a href="https://aralroca.com/blog/learn-deno-chat-app">Learn Deno: Chat app</a></li>
-</ul>
-<p><strong>未来写作关键词</strong></p>
-<ul>
-<li>[ ] 深入安装、deno_install</li>
-<li>[ ] OAK、ABC 入门 &amp; 简易对比</li>
-<li>[ ] 源码、安装</li>
-<li>[ ] 深入、IO</li>
-<li>[ ] 深入、beats</li>
-<li>[ ] Node 篇：EventEmmiter</li>
-<li>[ ] 精读、采访 Ry</li>
-<li>[ ] 深入、HTTP</li>
-<li>[ ] JS、运行时</li>
-</ul>
-<p><strong>其他待做</strong></p>
-<ul>
-<li>[x] 寻找好看的 UI 生成器搭建 Github Pages 部署网站</li>
-</ul>
-<h2 id="%E6%9E%84%E5%BB%BA">构建<a class="anchor" href="#%E6%9E%84%E5%BB%BA">§</a></h2>
-<p>使用 <a href="https://github.com/xcatliu/pagic">Pagic</a> 构建：</p>
-<pre class="language-bash"><code class="language-bash">deno run --unstable --allow-read --allow-write --allow-net --allow-env <a class="token url-link" href="https://deno.land/x/pagic@0.7.28/mod.ts">https://deno.land/x/pagic@0.7.28/mod.ts</a> build --serve --watch
-</code></pre>
-<h2 id="%E8%B4%A1%E7%8C%AE%E8%80%85">贡献者<a class="anchor" href="#%E8%B4%A1%E7%8C%AE%E8%80%85">§</a></h2>
-<p>按第一次贡献顺序排名</p>
-<ul>
-<li><a href="https://github.com/hylerrix">@hylerrix</a></li>
-<li><a href="https://github.com/imcoddy">@imcoddy</a></li>
-<li><a href="https://github.com/xcatliu">@xcatliu</a></li>
-<li><a href="https://github.com/justjavac">@justjavac</a></li>
-</ul>
-<h2 id="%E8%AE%A2%E9%98%85">订阅<a class="anchor" href="#%E8%AE%A2%E9%98%85">§</a></h2>
-<p>本项目文档内容均采用 [CC-BY-SA-4.0] 协议进行共享，欢迎 Star, Watch 本仓库，或订阅下方微信公众号及时交流。</p>
-<p><img src="http://qiniu.ningo.cloud/official-qrcode.png" alt=""></p>
-</article><div class="prev_next"><a class="next button" href="/undefined">基础篇<!-- -->  »</a></div><div id="gitalk-container"></div><link id="gitalk-css" rel="preload" href="https://unpkg.com/gitalk@1.6.2/dist/gitalk.css" as="style"/><script defer="" src="https://unpkg.com/gitalk@1.6.2/dist/gitalk.min.js"></script></div><div class="main_toc_container nav_link_container"><div class="main_toc"><aside><nav class="toc"><ol><li><a href="#%E7%9B%AE%E5%BD%95">目录</a></li><li><a href="#%E6%96%87%E7%AB%A0">文章</a></li><li><a href="#%E5%86%99%E4%BD%9C%E8%B7%AF%E7%BA%BF%E5%9B%BE">写作路线图</a></li><li><a href="#%E6%9E%84%E5%BB%BA">构建</a></li><li><a href="#%E8%B4%A1%E7%8C%AE%E8%80%85">贡献者</a></li><li><a href="#%E8%AE%A2%E9%98%85">订阅</a></li></ol></nav></aside></div></div></section><div class="tools flex_center"><a class="czs-pen button" href="https://github.com/hylerrix/deno-tutorial/edit/master/README.md" target="_blank" style="background-image:url(&quot;/assets/czs-pen.svg&quot;)"></a><a class="czs-angle-up-l button" href="#" style="background-image:url(&quot;/assets/czs-angle-up-l.svg&quot;)"></a></div><script crossorigin="anonymous" src="https://unpkg.com/react@16.13.1/umd/react.production.min.js"></script><script crossorigin="anonymous" src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script type="module" src="/index.js"></script></body></html>
+</head><body><header><h1 class="hide_on_mobile"><a href="/">Deno 钻研之术</a></h1><nav><ul><li class="show_on_mobile flex_center"><a class="czs-menu-l" href="#" style="background-image:url(&quot;/assets/czs-menu-l.svg&quot;)"></a></li><li class="show_on_mobile"><h1 class="mobile_title"><a href="/">Deno 钻研之术</a></h1></li><li class="hide_on_mobile"><a href="/articles/">文章</a></li><li class="hide_on_mobile"><a href="http://qiniu.ningo.cloud/hylerrix/reward-alipay.png" target="_blank">打赏一下!!</a></li><li class="hide_on_mobile"><a href="https://github.com/hylerrix/awesome-deno-cn" target="_blank">资源</a></li><li class="hide_on_mobile"><a href="http://tutorial.deno.js.cn" target="_blank">镜像</a></li><li class="hide_on_mobile"><a href="https://github.com/hylerrix/deno-feedly" target="_blank">Deno 双周刊</a></li><li class="hide_on_mobile"><a href="https://github.com/hylerrix" target="_blank">持续添加中...</a></li><li class="hide_on_mobile"><a href="https://github.com/ningowood" target="_blank">凝果屋</a></li><li class="hide_on_mobile"><a href="https://github.com/hylerrix" target="_blank">关于</a></li><li style="flex-grow:1"></li><li class="flex_center"><a class="czs-github-logo" href="https://github.com/hylerrix/deno-tutorial" target="_blank" style="background-image:url(&quot;/assets/czs-github-logo.svg&quot;)"></a></li><li class="toggle_dark flex_center"><span class="czs-sun" style="background-image:url(&quot;/assets/czs-sun.svg&quot;)"></span><span class="czs-sun-l" style="background-image:url(&quot;/assets/czs-sun-l.svg&quot;)"></span><span class="czs-moon" style="background-image:url(&quot;/assets/czs-moon.svg&quot;)"></span><span class="czs-moon-l" style="background-image:url(&quot;/assets/czs-moon-l.svg&quot;)"></span></li></ul></nav></header><section class="main"><div class="main_article"><div><style>
+h2 {
+  font-weight: normal;
+}
+.main_article {
+  width: 960px;
+  max-width: 960px;
+  padding-bottom: 0;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 3rem -1rem 0 -1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+.cards > div {
+  width: 20rem;
+  padding: 0 1rem;
+}
+.cards ul {
+  color: var(--color-text-muted);
+}
+.btn {
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  border: 0;
+  cursor: pointer;
+  opacity: 0.9;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: var(--color-border);
+  color: var(--color-text);
+}
+.btn:hover {
+  text-decoration: none;
+}
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+.btn:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 44rem) {
+  h2 {
+    text-align: center;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards > div {
+    width: 100vw;
+  }
+  .cards ul {
+    text-align: center;
+    padding-left: 0;
+    list-style: none;
+  }
+  pre {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+</style><h1 style="margin-top:3.5rem;text-align:center;font-size:64px;color:hsl(210, 70%, 50%)">Deno 钻研之术</h1><p style="font-size:28px;margin-top:2rem;text-align:center;color:var(--color-text-muted)">循序渐进学 Deno &amp; 先易后难补 Node &amp; 面向未来的 Deno Web 应用开发</p><div style="display:flex;justify-content:center;margin-top:2rem"><a class="btn btn-primary" href="/articles/">开始阅读</a><a class="btn" target="_blank" href="https://github.com/hylerrix/deno-tutorial">源码仓库</a></div></div><div class="cards"><div><h2>原创文章</h2><ul><li>融合了笔者的大量思考。</li><li>本书、笔者和读者一起成长。</li><li>友好的交流环境。</li></ul></div><div><h2>内容丰富</h2><ul><li>从多方位建设 <code>Deno</code> 生态。</li><li>内容包括但不局限于 <code>Deno</code> <code>Node</code> <code>React</code> <code>Rust</code> 等众多技术要点。</li><li>收录各种翻译文章、授权转载文章。</li></ul></div><div><h2>长期维护</h2><ul><li>来源于一份对持续深入地掌握前沿技术的渴望。</li><li>基于 <code>Pagic</code> 静态网站生成器，构建长期的网站技术支持。</li><li>野心，不止于此。</li></ul></div></div><h2>推荐你的 Deno 文章？快来一起建设吧</h2><pre style="font-size:1rem"><code># 直接在 issues 区里推荐
+https://github.com/hylerrix/deno-tutorial/issues
+
+# 或克隆项目，本地编辑并 PR
+git clone https://github.com/${YOUR_NAME}/deno-tutorial
+git add . && git commit -s -m "feat(docs): add a new article"
+git push origin main</code></pre><div id="gitalk-container"></div><link id="gitalk-css" rel="preload" href="https://cdn.pagic.org/gitalk@1.6.2/dist/gitalk.css" as="style"/><script defer="" src="https://cdn.pagic.org/gitalk@1.6.2/dist/gitalk.min.js"></script></div></section><footer>Powered by <a href="https://github.com/xcatliu/pagic" target="_blank">Pagic</a></footer><div class="tools flex_center hide_on_mobile"><a class="czs-angle-up-l button" href="#" style="background-image:url(&quot;/assets/czs-angle-up-l.svg&quot;)"></a></div><script src="https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js"></script><script src="https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script type="module" src="/index.js"></script></body></html>

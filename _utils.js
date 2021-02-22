@@ -13,12 +13,22 @@ export function classnames(...args) {
     }
     return unique(classList).join(' ');
 }
-export function isInViewport(elem) {
-    const bounding = elem.getBoundingClientRect();
-    return (bounding.top >= 0 &&
-        bounding.left >= 0 &&
-        // @ts-ignore
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        // @ts-ignore
-        bounding.right <= (window.innerWidth || document.documentElement.clientWidth));
+export const dateFormatter = {
+    'yyyy-MM-dd': (date) => {
+        const d = new Date(date);
+        const yyyy = d.getFullYear().toString();
+        const MM = `0${d.getMonth() + 1}`.slice(-2);
+        const dd = `0${d.getDate() + 1}`.slice(-2);
+        return `${yyyy}-${MM}-${dd}`;
+    },
+};
+export function isRelativeLink(link) {
+    if (link.startsWith('/')) {
+        return false;
+    }
+    // https://en.wikipedia.org/wiki/List_of_URI_schemes
+    if (/^[a-zA-Z0-9\-\.]+:\/\//.test(link)) {
+        return false;
+    }
+    return true;
 }
