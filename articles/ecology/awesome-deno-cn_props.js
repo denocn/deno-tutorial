@@ -7,8 +7,8 @@ export default {
         "text": "生态篇"
     },
     'next': {
-        "link": "articles/node/index.html",
-        "text": "Node 篇"
+        "link": "articles/official/index.html",
+        "text": "官方篇"
     },
     config: { "root": "/", ...projectConfig, branch: 'main' },
     'pagePath': "articles/ecology/awesome-deno-cn.md",
@@ -36,7 +36,7 @@ export default {
     'contributors': [
         "hylerrix"
     ],
-    'date': "2021-03-09T09:47:13.000Z",
+    'date': "2021-03-23T03:11:47.000Z",
     'updated': null,
     'excerpt': "一个全新的技术会有怎样的生态？在对 Deno 的好奇和梳理过程中，基于已有的 Awesome Deno 英文列表全新出发，一个专注于中文技术圈的 Deno 资源列表呼之欲出。 为什么是 Awesome？ Github 集市上广受欢迎的仓库有这么几大类： ...",
     'cover': "http://qiniu.ningo.cloud/articles/1b0-01.jpg",
@@ -117,24 +117,6 @@ export default {
             "text": "生态篇"
         },
         {
-            "link": "articles/node/index.html",
-            "title": "Node 篇",
-            "children": [
-                {
-                    "text": "深入浅出 Create React App",
-                    "link": "articles/node/create-react-app-intro.html",
-                    "pagePath": "articles/node/create-react-app-intro.md"
-                },
-                {
-                    "text": "欲取代绝大多 JavaScript 工具链？Rome 尝鲜",
-                    "link": "articles/node/javascript-toolchain-rome.html",
-                    "pagePath": "articles/node/javascript-toolchain-rome.md"
-                }
-            ],
-            "pagePath": "articles/node/README.md",
-            "text": "Node 篇"
-        },
-        {
             "link": "articles/official/index.html",
             "title": "官方篇",
             "children": [
@@ -191,7 +173,7 @@ export default {
             "text": "翻译篇"
         },
         {
-            "link": "articles/rust/README.md",
+            "link": "articles/rust/index.html",
             "title": "Rust 篇",
             "children": [
                 {
@@ -200,7 +182,13 @@ export default {
                     "pagePath": "articles/rust/rust-tutorial-todo-app.md"
                 }
             ],
-            "text": "articles/rust/README.md"
+            "pagePath": "articles/rust/README.md",
+            "text": "Rust 篇"
+        },
+        {
+            "text": "开发日志",
+            "link": "articles/TIMELINE.html",
+            "pagePath": "articles/TIMELINE.md"
         },
         {
             "text": "感谢",

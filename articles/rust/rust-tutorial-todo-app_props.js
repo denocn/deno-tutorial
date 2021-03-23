@@ -3,12 +3,12 @@ import Ga from '/_ga.js';
 import Gitalk from '/_gitalk.js';
 export default {
     'prev': {
-        "text": "为什么我认为 Deno 是一个迈向错误方向的 JavaScript 运行时？",
-        "link": "articles/translation/why-deno-wrong.html"
+        "link": "articles/rust/index.html",
+        "text": "Rust 篇"
     },
     'next': {
-        "text": "感谢",
-        "link": "articles/THANKS.html"
+        "text": "开发日志",
+        "link": "articles/TIMELINE.html"
     },
     config: { "root": "/", ...projectConfig, branch: 'main' },
     'pagePath': "articles/rust/rust-tutorial-todo-app.md",
@@ -36,7 +36,7 @@ export default {
     'contributors': [
         "hylerrix"
     ],
-    'date': "2021-03-09T09:47:13.000Z",
+    'date': "2021-03-23T03:11:47.000Z",
     'updated': null,
     'excerpt': "Rust 语言从 2015 年发布的首个开源版本开始，便获得了社区大量的关注。从 StackOverflow 上的开发者调查来看，Rust 也是 2016 年每年都最受开发者喜欢的编程语言。 Rust 由 Mozilla 设计，被定义为一个系统级编程语言（就像 C...",
     'cover': "https://cdn.nlark.com/yuque/0/2021/png/86548/1611302172869-1896d3be-0c1b-444b-a17f-e945faf3c05c.png#align=left&display=inline&height=800&margin=%5Bobject%20Object%5D&name=&originHeight=800&originWidth=1200&size=70280&status=done&style=none&width=1200",
@@ -117,24 +117,6 @@ export default {
             "text": "生态篇"
         },
         {
-            "link": "articles/node/index.html",
-            "title": "Node 篇",
-            "children": [
-                {
-                    "text": "深入浅出 Create React App",
-                    "link": "articles/node/create-react-app-intro.html",
-                    "pagePath": "articles/node/create-react-app-intro.md"
-                },
-                {
-                    "text": "欲取代绝大多 JavaScript 工具链？Rome 尝鲜",
-                    "link": "articles/node/javascript-toolchain-rome.html",
-                    "pagePath": "articles/node/javascript-toolchain-rome.md"
-                }
-            ],
-            "pagePath": "articles/node/README.md",
-            "text": "Node 篇"
-        },
-        {
             "link": "articles/official/index.html",
             "title": "官方篇",
             "children": [
@@ -191,7 +173,7 @@ export default {
             "text": "翻译篇"
         },
         {
-            "link": "articles/rust/README.md",
+            "link": "articles/rust/index.html",
             "title": "Rust 篇",
             "children": [
                 {
@@ -200,7 +182,13 @@ export default {
                     "pagePath": "articles/rust/rust-tutorial-todo-app.md"
                 }
             ],
-            "text": "articles/rust/README.md"
+            "pagePath": "articles/rust/README.md",
+            "text": "Rust 篇"
+        },
+        {
+            "text": "开发日志",
+            "link": "articles/TIMELINE.html",
+            "pagePath": "articles/TIMELINE.md"
         },
         {
             "text": "感谢",

@@ -7,8 +7,8 @@ export default {
         "link": "articles/translation/deno-oak-mysql.html"
     },
     'next': {
-        "text": "Rust 语言入门教程：从实战 To-Do App 开始",
-        "link": "articles/rust/rust-tutorial-todo-app.html"
+        "link": "articles/rust/index.html",
+        "text": "Rust 篇"
     },
     config: { "root": "/", ...projectConfig, branch: 'main' },
     'pagePath': "articles/translation/why-deno-wrong.md",
@@ -36,7 +36,7 @@ export default {
     'contributors': [
         "hylerrix"
     ],
-    'date': "2021-03-09T09:47:13.000Z",
+    'date': "2021-03-23T03:11:47.000Z",
     'updated': null,
     'excerpt': "译者序 在为《Deno 钻研之术》引入第一篇翻译文章的时候，就看到了这篇文章，那时还觉得驾驭不了，就重点先写了若干篇入门级别的 Deno 文章。 转眼到 2021 年，从《Deno 双周刊》第一期继续开启新的一年的 Deno 之旅，于是就回...",
     'cover': "https://cdn.nlark.com/yuque/0/2021/png/86548/1610538854285-bc5db817-2188-4013-ae19-a1ffe77923de.png#align=left&display=inline&height=497&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1333&originWidth=2000&size=4783066&status=done&style=none&width=746",
@@ -117,24 +117,6 @@ export default {
             "text": "生态篇"
         },
         {
-            "link": "articles/node/index.html",
-            "title": "Node 篇",
-            "children": [
-                {
-                    "text": "深入浅出 Create React App",
-                    "link": "articles/node/create-react-app-intro.html",
-                    "pagePath": "articles/node/create-react-app-intro.md"
-                },
-                {
-                    "text": "欲取代绝大多 JavaScript 工具链？Rome 尝鲜",
-                    "link": "articles/node/javascript-toolchain-rome.html",
-                    "pagePath": "articles/node/javascript-toolchain-rome.md"
-                }
-            ],
-            "pagePath": "articles/node/README.md",
-            "text": "Node 篇"
-        },
-        {
             "link": "articles/official/index.html",
             "title": "官方篇",
             "children": [
@@ -191,7 +173,7 @@ export default {
             "text": "翻译篇"
         },
         {
-            "link": "articles/rust/README.md",
+            "link": "articles/rust/index.html",
             "title": "Rust 篇",
             "children": [
                 {
@@ -200,7 +182,13 @@ export default {
                     "pagePath": "articles/rust/rust-tutorial-todo-app.md"
                 }
             ],
-            "text": "articles/rust/README.md"
+            "pagePath": "articles/rust/README.md",
+            "text": "Rust 篇"
+        },
+        {
+            "text": "开发日志",
+            "link": "articles/TIMELINE.html",
+            "pagePath": "articles/TIMELINE.md"
         },
         {
             "text": "感谢",
